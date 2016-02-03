@@ -819,3 +819,137 @@
 # - explore: patient_general_collection
 #   joins:
 #     - join: patient
+#       type: left_outer 
+#       sql_on: ${patient_general_collection.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientencounter
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientencounter.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientidentifier
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientidentifier.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientidentifier_test
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientidentifier_test.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientidinfo
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientidinfo.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientinstituteid
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientinstituteid.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientinstituteid_denorm
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientinstituteid_denorm.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patientrace
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientrace.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: patients
+
+# - explore: patientstaging
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${patientstaging.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+#     - join: cancercase
+#       type: left_outer 
+#       sql_on: ${patientstaging.cancercase_id} = ${cancercase.cancercase_id}
+#       relationship: many_to_one
+
+
+# - explore: pcap_backup
+
+# - explore: pdi_job_log
+
+# - explore: pdi_transform_log
+
+# - explore: peter_temp
+
+# - explore: processing_relationship
+
+# - explore: prod_tcga_biospecimen
+
+# - explore: prod_tcga_biospecimen_5_8_2012
+
+# - explore: prod_tcga_clinical
+
+# - explore: prod_tcga_clinical_5_8_2012
+
+# - explore: prod_tcga_maf
+
+# - explore: protocol
+#   joins:
+#     - join: protocol
+#       type: left_outer 
+#       sql_on: ${protocol.protocol_id} = ${protocol.prprotocolid}
+#       relationship: many_to_one
+
+
+# - explore: protocolpatients
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${protocolpatients.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+#     - join: protocol
+#       type: left_outer 
+#       sql_on: ${protocolpatients.protocol_id} = ${protocol.prprotocolid}
+#       relationship: many_to_one
+
+#     - join: cancercase
+#       type: left_outer 
+#       sql_on: ${protocolpatients.cancercase_id} = ${cancercase.cancercase_id}
+#       relationship: many_to_one
+
+
+# - explore: ptidentifier_4_10
+
+# - explore: recurrence_count
+#   joins:
+#     - join: patient
+#       type: left_outer 
+#       sql_on: ${recurrence_count.patient_id} = ${patient.patient_id}
+#       relationship: many_to_one
+
+
+# - explore: report_privileges
+#   joins:
